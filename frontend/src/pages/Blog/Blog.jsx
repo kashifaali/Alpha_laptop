@@ -20,8 +20,6 @@ export default function Blog() {
   }, []); // <-- Empty array to run only once on mount
 
 
-
-
   return (
 
     <>

@@ -10,6 +10,11 @@ import ContactUs from './pages/Contact/ContactUs'
 import Addnew from './admin/Addnew'
 import Addblogs from './admin/Addblogs'
 import Viewalldata from './admin/Viewalldata'
+import Adminlogin from './auth/Adminlogin'
+import Adminindex from './admin/Adminindex'
+import AdminSidenavbar from './components/AdminSidenavbar'
+import Editformlaptop from './components/Editformlaptop'
+import EditFormBlog from './components/EditFormBlog'
 
 function App() {
   return (
@@ -26,6 +31,12 @@ function App() {
       <Route path='/addnew' element={<Addnew/>} />
       <Route path='/addblog' element={<Addblogs/>}/>
       <Route path='/alldata' element={<Viewalldata/>}/>
+      <Route path="/adminlogin" element={<Adminlogin/>} />
+      <Route path='/admin' element={<Adminindex/>} />
+      <Route path='/adminSidenavbar' element={<AdminSidenavbar/>} />
+      <Route path='/edit-laptop/:id' element={<Editformlaptop/>} />
+      <Route path='/edit-blog/:id' element={<EditFormBlog/>} />
+   
 
     </Routes>
     </BrowserRouter>
@@ -33,3 +44,5 @@ function App() {
 }
 
 export default App
+
+// 6789104

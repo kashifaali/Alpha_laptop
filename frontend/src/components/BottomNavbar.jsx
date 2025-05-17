@@ -48,19 +48,7 @@ export default function BottomNavbar() {
         </li>
         </Link>
 
-        <Link to={"/addblog"}>
-        <li className={`flex flex-col items-center font-semibold cursor-pointer ${isActive("/contact") ? "text-[#FABB1A]" : "text-black hover:text-[#FABB1A]"}`}>
-        <ContactMail fontSize="small" className="md:hidden" />
-          <span className="text-xs md:text-base">write blogs</span>
-        </li>
-        </Link>
-
-        <Link to={"/addnew"}>
-        <li className={`flex flex-col items-center font-semibold cursor-pointer ${isActive("/contact") ? "text-[#FABB1A]" : "text-black hover:text-[#FABB1A]"}`}>
-        <ContactMail fontSize="small" className="md:hidden" />
-          <span className="text-xs md:text-base">addnew</span>
-        </li>
-        </Link>
+        
         
       </ul>
     </nav>

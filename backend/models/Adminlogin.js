@@ -1,17 +1,17 @@
-// models/User.js
+// models/adminlogin.js
 import mongoose from "mongoose";
 import passportLocalMongoose from "passport-local-mongoose";
 
 const { Schema } = mongoose;
 
-const UserSchema = new Schema({
+const Adminlogin = new Schema({
   email: {
     type: String,
     required: true,
   }
 });
 
-UserSchema.plugin(passportLocalMongoose);
+Adminlogin.plugin(passportLocalMongoose);
 
-const User = mongoose.model("User", UserSchema);
-export default User;
+const Admin = mongoose.model("Admin", Adminlogin);
+export default Admin;
