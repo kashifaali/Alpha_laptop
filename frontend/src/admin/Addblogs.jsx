@@ -23,7 +23,7 @@ export default function AddBlogs() {
         imageUrl: ''
       })
 
-      navigate('/blog')
+      navigate('/admin')
 
     }
     catch {

@@ -40,7 +40,7 @@ export default function AddNew() {
         graphicsCard: '',
       });
 
-      navigate('/'); // ✅ use the function returned by useNavigate
+      navigate('/admin'); // ✅ use the function returned by useNavigate
     } catch (error) {
       console.error("Error adding laptop:", error);
     }

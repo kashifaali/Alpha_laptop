@@ -59,7 +59,7 @@ export default function Blog() {
                       {new Date(blog.createdAt).toLocaleDateString()}
                     </p>
 
-                    <p className="text-gray-600 mb-6">
+                    <p className="text-gray-600 mb-6 hover:underline cursor-pointer">
                       {blog.content.length > 150
                         ? blog.content.substring(0, 150) + '...'
                         : blog.content}

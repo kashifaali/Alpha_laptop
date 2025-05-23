@@ -16,16 +16,13 @@ export default function Cards({laptop}) {
       <div className="p-4">
         {/* Product Description */}
         <Link to={`/item_detail/${laptop._id}`} state={{ laptop }}>
-        <p className="text-gray-700 text-3xl font-bold md:text-base">
+<p className="text-gray-700 text-3xl font-bold md:text-base hover:underline">
           {laptop.name}
         </p>
         
 
-        {/* Price */}
-        <p className="text-lg font-light text-gray-900 mt-2 hover:underline cursor-pointer">
-  {laptop.description}
-</p>
-        <p className="text-lg font-bold text-gray-900 mt-2">{laptop.price}</p>
+        
+        <p className="text-md font-semibold text-gray-600 mt-2">Rs. {laptop.price}</p>
         </Link>
        
 
